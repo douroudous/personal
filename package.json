@@ -1,15 +1,15 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description",
   "main": "webpack.config.js",
   "scripts": {
     "heroku-postbuild": "NODE_ENV=production npm run webpack -- -p",
     "start": "npm run webpack -- --watch",
-    "test": "node_modules/.bin/karma start react/karma.conf.js",
-    "webpack": "node_modules/.bin/webpack --config ./react/webpack.config.js"
+    "test": "karma start react/karma.conf.js",
+    "webpack": "webpack --config ./react/webpack.config.js"
   },
-  "author": "",
+  "author": "Dino Dourountoudakis",
   "license": "ISC",
   "devDependencies": {
     "enzyme": "^2.2.0",
@@ -44,5 +44,13 @@
     "redux-form": "^5.2.3",
     "redux-thunk": "^2.1.0",
     "webpack": "^1.13.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douroudous/personal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/douroudous/personal/issues"
+  },
+  "homepage": "https://github.com/douroudous/personal#readme"
 }

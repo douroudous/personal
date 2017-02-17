@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YouTab</title>
+    <title>Dino Dourountoudakis</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <link rel="stylesheet" href="animate.css">
@@ -9,48 +9,6 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="you inline-block">You</h1>
-      <h1 class="inline-block">Tab</h1>
-      <nav class="review-list row container centered">
-        <div class="small-3 columns">
-          <span class="dropbtn"><%= link_to "Tabs", root_path %></span>
-        </div>
-        <div class="small-3 columns">
-          <span class="dropbtn"><%= link_to "Artists", artists_path %></span>
-        </div>
-          <% if user_signed_in? %>
-            <div class="small-3 columns">
-              <span class="dropbtn"><%= link_to 'Users', users_path%></span>
-            </div>
-            <div class="small-3 columns">
-              <span class="dropbtn"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></span>
-            </div>
-          <% else %>
-            <div class="small-3 columns">
-              <span class="dropbtn"><%= link_to 'Sign In', new_user_session_path %></span>
-            </div>
-            <div class="small-3 columns">
-              <span class="dropbtn"><%= link_to 'Sign Up', new_user_registration_path %></span>
-            </div>
-          <% end %>
-      </nav>
-    </header>
-
-    <main>
-    </br>
-      <% if notice.is_a?(Array) %>
-        <% notice.each do |this_notice| %>
-          <p class="notice"><%= this_notice %></p>
-        <% end %>
-      <%elsif notice %>
-        <p class="notice"> <%= notice %></p>
-      <% end %>
-
-      <p class="alert"><%= alert %></p>
-
-      <%= yield %>
-    </main>
-
+    <%= yield %>
   </body>
 </html>
