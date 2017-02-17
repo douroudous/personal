@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+body {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  line-height: 1.5;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background-color: #101820;
+}
+
+header {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bolder;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+}
+
+header h1 {
+  color: white;
+  font-size: 3.5em;
+  font-weight: 900;
+  padding-top: 0.7em;
+}
+
+.you {
+  color: #009ca3;
+  font-size: 3.5em;
+  font-weight: 900;
+  padding-top: 0.7em;
+}
+
+.list-small {
+  max-width: 30em;
+}
+
+.list-wide {
+  max-width: 40em;
+}
+
+.review-list {
+  max-width: 60em;
+}
+
+header a {
+  border: 1px solid #009ca3;
+  border-radius: 290486px;
+  color: #009ca3;
+  font-size: .8em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background:  #009ca3;
+  color: #101820;
+}
+
+.dropbtn {
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.link {
+  color: #009ca3;
+}
+
+a:hover {
+  color: white;
+}
+
+.button {
+  background-color: #101820;
+  border: 1px solid #009ca3;
+  color: #009ca3;
+  font-size: 15px;
+  width: 170px;
+  border-radius: 290486px;
+  margin-right: 10px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color:  #009ca3;
+  color: #101820;
+}
+
+.form-text {
+  color: #101820;
+}
+
+.form-label {
+  color: white;
+}
+
+.tabs-text {
+  font-family: "Andale Mono";
+  font-size: 15px;
+}
+
+.new-button {
+  font-size: 1rem;
+  text-transform: uppercase;
+
+}
+
+.import-button {
+  font-size: 1rem;
+  width: 300px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.grey {
+  color: #a3a3a3;
+}
+
+.optional-field:before {
+  content: "\00a0";
+  font-size: 0;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+
+.notice, .selected {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.selected-chord {
+  color: #009ca3;
+  font-weight: bold;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.actions {
+  color: #101820;
+  text-align: center;
+}
+
+.field {
+  color: white;
+}
+
+.display-none {
+  display:none;
+}
+
+.add-review{
+  padding-top: 30px;
+}
+
+#search {
+  border-radius: 290486px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #CDDCDE;
+  width: 30%;
+  margin: 0 auto;
+}
