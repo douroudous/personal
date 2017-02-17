@@ -9,4 +9,3 @@
 
 * Ruby on Rails
 * ReactJS
-* PostgreSQL
