@@ -1,9 +1,10 @@
 # Personal Website
 
 ## Description
+* Personal website outlining experience and skills.
 
 ## Author
-* Dino Dourountoudakis (https://github.com/douroudous)
+* Dino Dourountoudakis
 
 ## Technologies
 
