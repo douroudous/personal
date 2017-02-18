@@ -17,9 +17,8 @@ h1 {
 }
 
 .main-area {
-  background-color: #757571;
   text-align: center;
-
+  margin-top: 120px;
 }
 
 .button {
@@ -35,4 +34,12 @@ h1 {
 
 .button:focus {
   outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected-button {
+  background-color: #5498af;
 }
