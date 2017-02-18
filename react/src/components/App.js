@@ -54,7 +54,7 @@ class App extends React.Component {
         <button className={contactButton} onClick={() => this.handleSelect(4)}>Contact</button>
         <div className="main-area">
           <div className={aboutMe}><AboutMe /></div>
-          <div className={experience}><Experience/></div>
+          <div className={experience}><Experience /></div>
           <div className={projects}><Projects /></div>
           <div className={contact}><Contact /></div>
         </div>

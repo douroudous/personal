@@ -28,10 +28,6 @@ h1 {
   font-weight: 500;
 }
 
-.button:hover {
-  background-color: #5498af;
-}
-
 .button:focus {
   outline: none;
 }
@@ -41,5 +37,5 @@ h1 {
 }
 
 .selected-button {
-  background-color: #5498af;
+  background-color: #2199e8;
 }
