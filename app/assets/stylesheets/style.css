@@ -20,19 +20,13 @@ h1, h2, h3{
   text-align: center;
 }
 
-.main-area {
-  text-align: center;
-  margin-top: 120px;
-}
-
-.experience-buttons {
+.narrower-buttons {
   max-width: 38em;
   margin:0 auto;
 }
 
-.project-buttons {
-  max-width: 25em;
-  margin:0 auto;
+.about-me {
+  margin-top: 150px;
 }
 
 .button {

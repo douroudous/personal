@@ -37,8 +37,7 @@ class Experience extends React.Component {
 
     return(
       <div>
-        <h2>Experience</h2>
-        <div className="experience-buttons">
+        <div className="narrower-buttons">
           <div className="small-4 columns">
             <button className={workButton} onClick={() => this.handleSelect(1)}>Work</button>
           </div>

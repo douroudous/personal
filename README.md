@@ -7,6 +7,5 @@
 * Dino Dourountoudakis
 
 ## Technologies
-
-* Ruby on Rails
 * ReactJS
+* Ruby on Rails
