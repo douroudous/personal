@@ -22,10 +22,10 @@ class App extends React.Component {
     let experience = "hidden";
     let projects = "hidden";
     let contact = "hidden";
-    let aboutMeButton = "small-3 columns button";
-    let experienceButton = "small-3 columns button";
-    let projectsButton = "small-3 columns button";
-    let contactButton = "small-3 columns button";
+    let aboutMeButton = "button";
+    let experienceButton = "button";
+    let projectsButton = "button";
+    let contactButton = "button";
     switch(this.state.selected) {
       case 1:
         aboutMe = "";
@@ -48,10 +48,18 @@ class App extends React.Component {
     return(
       <div>
         <h1>Dino Dourountoudakis</h1>
-        <button className={aboutMeButton} onClick={() => this.handleSelect(1)}>About Me</button>
-        <button className={experienceButton} onClick={() => this.handleSelect(2)}>Experience</button>
-        <button className={projectsButton} onClick={() => this.handleSelect(3)}>Projects</button>
-        <button className={contactButton} onClick={() => this.handleSelect(4)}>Contact</button>
+        <div className="small-3 columns">
+          <button className={aboutMeButton} onClick={() => this.handleSelect(1)}>About Me</button>
+        </div>
+        <div className="small-3 columns">
+          <button className={experienceButton} onClick={() => this.handleSelect(2)}>Experience</button>
+        </div>
+        <div className="small-3 columns">
+          <button className={projectsButton} onClick={() => this.handleSelect(3)}>Projects</button>
+        </div>
+        <div className="small-3 columns">
+          <button className={contactButton} onClick={() => this.handleSelect(4)}>Contact</button>
+        </div>
         <div className="main-area">
           <div className={aboutMe}><AboutMe /></div>
           <div className={experience}><Experience /></div>
