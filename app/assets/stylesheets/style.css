@@ -2,22 +2,25 @@
 
 body {
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 60em;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
-  padding: 4em 1em;
-  background-color: #181712;
-  color: #F0F0F0;
+  padding: 4em .5em;
+  color: #1a242c;
 }
 
 h1, h2, h3{
-  text-align: center;
+  /*text-align: center;*/
   font-weight: 700;
   margin-bottom: 30px;
 }
 
 .centered {
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
 
 .narrower-buttons {
@@ -29,23 +32,36 @@ h1, h2, h3{
   margin-top: 150px;
 }
 
-.button {
-  color: #F0F0F0;
-  background-color: #757571;
-  text-transform: uppercase;
-  font-weight: 500;
-  width: 170px;
-border-radius: 40px;
+.link {
+  width: 120px;
+  display: inline-block;
+  color: #999999;
 }
 
-.button:focus {
+.link:hover {
+  color: #0055dd;
+}
+
+.selected-link {
+  font-weight: 600;
+}
+
+.selected-link:focus {
   outline: none;
 }
 
-.hidden {
-  display: none;
+.selected-about {
+  color: #51b9e0;
 }
 
-.selected-button {
-  background-color: #2199e8;
+.selected-experience {
+  color: #ed3d45;
+}
+
+.selected-projects {
+  color: #00cfb5;
+}
+
+.selected-contact {
+  color: #8f46b9;
 }

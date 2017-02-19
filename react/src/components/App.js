@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutMe from './AboutMe';
+import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
@@ -18,50 +18,50 @@ class App extends React.Component {
   }
 
   render() {
-    let aboutMe = "hidden";
+    let about = "hidden";
     let experience = "hidden";
     let projects = "hidden";
     let contact = "hidden";
-    let aboutMeButton = "button";
-    let experienceButton = "button";
-    let projectsButton = "button";
-    let contactButton = "button";
+    let aboutButton = "";
+    let experienceButton = "";
+    let projectsButton = "";
+    let contactButton = "";
     switch(this.state.selected) {
       case 1:
-        aboutMe = "";
-        aboutMeButton = aboutMeButton + " selected-button";
+        about = "";
+        aboutButton = aboutButton + " selected-link selected-about";
         break;
       case 2:
         experience = "";
-        experienceButton = aboutMeButton + " selected-button";
+        experienceButton = experienceButton + " selected-link selected-experience";
         break;
       case 3:
         projects = "";
-        projectsButton = aboutMeButton + " selected-button";
+        projectsButton = projectsButton + " selected-link selected-projects";
         break;
       case 4:
         contact = "";
-        contactButton = aboutMeButton + " selected-button";
+        contactButton = contactButton + " selected-link selected-contact";
         break;
     }
 
     return(
-      <div>
+      <div className="top-buttons">
         <h1>Dino Dourountoudakis</h1>
-        <div className="small-3 columns">
-          <button className={aboutMeButton} onClick={() => this.handleSelect(1)}>About Me</button>
+        <div className="link">
+          <span className={aboutButton} onClick={() => this.handleSelect(1)}>About Me</span>
         </div>
-        <div className="small-3 columns">
-          <button className={experienceButton} onClick={() => this.handleSelect(2)}>Experience</button>
+        <div className="link">
+          <span className={experienceButton} onClick={() => this.handleSelect(2)}>Experience</span>
         </div>
-        <div className="small-3 columns">
-          <button className={projectsButton} onClick={() => this.handleSelect(3)}>Projects</button>
+        <div className="link">
+          <span className={projectsButton} onClick={() => this.handleSelect(3)}>Projects</span>
         </div>
-        <div className="small-3 columns">
-          <button className={contactButton} onClick={() => this.handleSelect(4)}>Contact</button>
+        <div className="link">
+          <span className={contactButton} onClick={() => this.handleSelect(4)}>Contact</span>
         </div>
         <div className="centered">
-          <div className={aboutMe}><AboutMe /></div>
+          <div className={about}><About /></div>
           <div className={experience}><Experience /></div>
           <div className={projects}><Projects /></div>
           <div className={contact}><Contact /></div>
