@@ -4,12 +4,12 @@ const About  = props => {
 
   return(
     <div>
-      <span className="selected-link selected-about">About Me</span>
+      <span className="selected selected-about">About Me</span>
       <div className="section">
-        <span className="small-6 columns">Background, objective</span>
-        <div className="small-6 columns">
+        <div className="small-4 columns">
           <img className="main-pic" src={"https://launchpass-production.s3.amazonaws.com/uploads/user/profile_photo/828/Dino_Dourountoudakis.jpg"}/>
         </div>
+        <div className="small-8 columns">Background, objective</div>
       </div>
     </div>
   );

@@ -35,6 +35,23 @@ class Experience extends React.Component {
         break;
     }
 
+     let skillsList = ["Ruby", "Ruby on Rails", "JavaScript", "ReactJS", "HTML", "CSS", "PostgreSQL"];
+     let skillsElements = skillsList.map (skill => {
+       return(<div>{skill}</div>)
+     })
+
+     let workList = [
+       {name: "Launch Academy", dates: "Nov 2016 - Feb 2017", position: "Programmer/Analyst"},
+       {name: "Meditech", dates: "Aug 2012 - Nov 2016", position: "Programmer/Analyst"}
+     ];
+     let workElements = workList.map (work => {
+       return(<div>
+                <div>{work.name}</div>
+                <div>{work.dates}</div>
+                <div>{work.position}</div>
+              </div>)
+     })
+
     return(
       <div>
         <div className="link">
@@ -47,9 +64,17 @@ class Experience extends React.Component {
           <span className={educationButton} onClick={() => this.handleSelect(3)}>Education</span>
         </div>
         <div className="section">
-          <div className={work}>Work</div>
-          <div className={skills}>Skills</div>
-          <div className={education}>Education</div>
+          <div className={work}>
+            {workElements}
+          </div>
+          <div className={skills}>
+            {skillsElements}
+          </div>
+          <div className={education}>
+            <div>2012</div>
+            <div>BS in Physics</div>
+            <div>Bridgewater State University</div>
+          </div>
         </div>
       </div>
     );

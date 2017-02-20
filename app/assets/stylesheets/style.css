@@ -1,22 +1,23 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+@import url('https://fonts.googleapis.com/css?family=Signika:700');
 
 body {
   margin: 0 auto;
   max-width: 60em;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Signika', sans-serif;
   line-height: 1.5;
   padding: 3em .5em;
   color: #1a242c;
 }
 
 h1, h2, h3{
-  /*text-align: center;*/
+  font-family: 'Signika', sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
 .main-pic {
-      border-radius: 40%;
+  border-radius: 40%;
+  /*width: 70%;*/
 }
 
 .centered {
@@ -41,8 +42,16 @@ h1, h2, h3{
   color: #0055dd;
 }
 
+.selected {
+  font-weight: 700;
+}
+
 .selected-link {
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.selected-link:hover {
+  color: #1a242c;
 }
 
 .selected-link:focus {
@@ -51,20 +60,16 @@ h1, h2, h3{
 
 .selected-about {
   color: #00cfb5;
-
 }
 
 .selected-experience {
   color: #51b9e0;
-
 }
 
 .selected-projects {
   color: #8f46b9;
-
 }
 
 .selected-contact {
   color: #ed3d45;
-
 }
