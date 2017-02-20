@@ -5,7 +5,7 @@ body {
   max-width: 60em;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
-  padding: 4em .5em;
+  padding: 3em .5em;
   color: #1a242c;
 }
 
@@ -13,6 +13,10 @@ h1, h2, h3{
   /*text-align: center;*/
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+.main-pic {
+      border-radius: 40%;
 }
 
 .centered {
@@ -23,17 +27,12 @@ h1, h2, h3{
   display: none;
 }
 
-.narrower-buttons {
-  max-width: 38em;
-  margin:0 auto;
-}
-
-.about-me {
-  margin-top: 150px;
+.section {
+  margin-top: 20px;
 }
 
 .link {
-  width: 120px;
+  padding-right: 20px;
   display: inline-block;
   color: #999999;
 }
@@ -51,17 +50,21 @@ h1, h2, h3{
 }
 
 .selected-about {
-  color: #51b9e0;
+  color: #00cfb5;
+
 }
 
 .selected-experience {
-  color: #ed3d45;
+  color: #51b9e0;
+
 }
 
 .selected-projects {
-  color: #00cfb5;
+  color: #8f46b9;
+
 }
 
 .selected-contact {
-  color: #8f46b9;
+  color: #ed3d45;
+
 }

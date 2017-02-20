@@ -17,38 +17,36 @@ class Projects extends React.Component {
     let youtab = "hidden";
     let personal = "hidden";
     let solemate = "hidden";
-    let youtabButton = "button";
-    let personalButton = "button";
-    let solemateButton = "button";
+    let youtabButton = "";
+    let personalButton = "";
+    let solemateButton = "";
     switch(this.state.selected) {
       case 1:
         youtab = "";
-        youtabButton = youtabButton + " selected-button";
+        youtabButton = youtabButton + " selected-link selected-projects";
         break;
       case 2:
         personal = "";
-        personalButton = personalButton + " selected-button";
+        personalButton = personalButton + " selected-link selected-projects";
         break;
       case 3:
         solemate = "";
-        solemateButton = solemateButton + " selected-button";
+        solemateButton = solemateButton + " selected-link selected-projects";
         break;
     }
 
     return(
       <div>
-        <div className="narrower-buttons">
-          <div className="small-4 columns">
-            <button className={youtabButton} onClick={() => this.handleSelect(1)}>YouTab</button>
-          </div>
-          <div className="small-4 columns">
-            <button className={personalButton} onClick={() => this.handleSelect(2)}>Personal Website</button>
-          </div>
-          <div className="small-4 columns">
-            <button className={solemateButton} onClick={() => this.handleSelect(3)}>SoleMate</button>
-          </div>
+        <div className="link">
+          <span className={youtabButton} onClick={() => this.handleSelect(1)}>YouTab</span>
         </div>
-        <div className="main-area">
+        <div className="link">
+          <span className={personalButton} onClick={() => this.handleSelect(2)}>Personal Website</span>
+        </div>
+        <div className="link">
+          <span className={solemateButton} onClick={() => this.handleSelect(3)}>SoleMate</span>
+        </div>
+        <div className="section">
           <div className={youtab}>YouTab</div>
           <div className={personal}>Personal</div>
           <div className={solemate}>Solemate</div>

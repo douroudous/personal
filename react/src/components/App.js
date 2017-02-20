@@ -46,10 +46,10 @@ class App extends React.Component {
     }
 
     return(
-      <div className="top-buttons">
+      <div>
         <h1>Dino Dourountoudakis</h1>
         <div className="link">
-          <span className={aboutButton} onClick={() => this.handleSelect(1)}>About Me</span>
+          <span className={aboutButton} onClick={() => this.handleSelect(1)}>About</span>
         </div>
         <div className="link">
           <span className={experienceButton} onClick={() => this.handleSelect(2)}>Experience</span>
@@ -60,7 +60,7 @@ class App extends React.Component {
         <div className="link">
           <span className={contactButton} onClick={() => this.handleSelect(4)}>Contact</span>
         </div>
-        <div className="centered">
+        <div className="section">
           <div className={about}><About /></div>
           <div className={experience}><Experience /></div>
           <div className={projects}><Projects /></div>
